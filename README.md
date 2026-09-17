@@ -49,7 +49,9 @@ RM Dark Helper is intentionally small and auditable. It does **not**:
 
 Release binaries are built from the public source by GitHub Actions and are accompanied by SHA-256 checksums.
 
-See the [privacy policy](PRIVACY.md), [security policy](SECURITY.md), and [code signing policy](CODE_SIGNING.md).
+See the [privacy policy](PRIVACY.md), [security policy](SECURITY.md), and [Code signing policy](CODE_SIGNING.md).
+
+**Code signing policy:** Free code signing provided by SignPath.io, certificate by SignPath Foundation.
 
 > Windows SmartScreen can warn about a new unsigned executable even when the source and build are clean. Code signing is planned for public releases.
 
@@ -75,6 +77,16 @@ Start with Windows
 ```
 
 This creates a shortcut named `RM Dark Helper.lnk` in the current user's Startup folder. Disabling the option removes the shortcut again. No registry entry is used.
+
+## Uninstallation
+
+RM Dark Helper is portable. To remove it:
+
+1. If **Start with Windows** is enabled, disable it first from the tray menu.
+2. Exit RM Dark Helper.
+3. Delete `RMDarkHelper.exe` from the folder where you placed it.
+
+No uninstaller or registry cleanup is required.
 
 ## Usage
 
