@@ -33,6 +33,8 @@ RM Dark Helper is intentionally small and auditable. It does **not**:
 
 Release binaries are built from the public source by GitHub Actions and are accompanied by SHA-256 checksums.
 
+See the [privacy policy](PRIVACY.md), [security policy](SECURITY.md), and [code signing policy](CODE_SIGNING.md).
+
 > Windows SmartScreen can warn about a new unsigned executable even when the source and build are clean. Code signing is planned for public releases.
 
 ## Requirements
