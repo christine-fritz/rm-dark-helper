@@ -55,6 +55,12 @@ See the [privacy policy](PRIVACY.md), [security policy](SECURITY.md), and [Code 
 
 > Windows SmartScreen can warn about a new unsigned executable even when the source and build are clean. Code signing is planned for public releases.
 
+## Download
+
+The latest public release is available from the [GitHub Releases page](https://github.com/christine-fritz/rm-dark-helper/releases/latest).
+
+Free code signing is provided by SignPath.io, certificate by SignPath Foundation, subject to acceptance into the SignPath Foundation Open Source program. Until that integration is complete, the currently published v1.0.0 binary remains unsigned.
+
 ## Requirements
 
 - Windows 10 or Windows 11, x64
