@@ -7,6 +7,22 @@ A lightweight, unofficial dark-mode overlay for RootsMagic 11 on Windows.
 
 > **Independent project.** RM Dark Helper is not affiliated with or endorsed by RootsMagic, Inc. RootsMagic is a trademark of RootsMagic, Inc.
 
+## Screenshots
+
+### Soft Dark
+
+![RootsMagic 11 pedigree view with RM Dark Helper in Soft Dark mode](assets/screenshots/pedigree-soft-dark.png)
+
+### Original / Soft Dark / Invert
+
+| Original | Soft Dark | Invert |
+|---|---|---|
+| ![RootsMagic 11 pedigree view without RM Dark Helper](assets/screenshots/pedigree-original.png) | ![RootsMagic 11 pedigree view with RM Dark Helper in Soft Dark mode](assets/screenshots/pedigree-soft-dark.png) | ![RootsMagic 11 pedigree view with RM Dark Helper in Invert mode](assets/screenshots/pedigree-invert.png) |
+
+### Tray controls
+
+<img src="assets/screenshots/tray-context-menu.png" alt="RM Dark Helper tray context menu" width="260">
+
 ## Features
 
 - darkens the main RootsMagic window
