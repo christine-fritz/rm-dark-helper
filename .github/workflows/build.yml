@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        shell: cmd
+        run: BUILD.cmd
+
+      - name: SHA-256
+        shell: powershell
+        run: |
+          $hash = (Get-FileHash .\RMDarkHelper.exe -Algorithm SHA256).Hash.ToLower()
+          "$hash  RMDarkHelper.exe" | Set-Content -Encoding ascii SHA256SUMS.txt
+          Get-Content SHA256SUMS.txt
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RMDarkHelper-windows-x64
+          path: |
+            RMDarkHelper.exe
+            SHA256SUMS.txt
