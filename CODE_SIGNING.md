@@ -1,30 +1,32 @@
 # Code signing policy
 
-## Current status
+## Provider
 
-RM Dark Helper v1.0.0 is currently distributed unsigned while the project establishes its first public release and applies for an Open Source code-signing service.
+Free code signing provided by SignPath.io, certificate by SignPath Foundation.
 
-The preferred signing path is SignPath Foundation, subject to eligibility and approval.
+RM Dark Helper is applying for the SignPath Foundation Open Source program. Until approval and integration are complete, the currently published v1.0.0 binary remains unsigned.
 
 ## Build provenance
 
-Public release binaries must be built from this GitHub repository using the checked-in build script and GitHub Actions workflow.
+Public release binaries are built from this GitHub repository using the checked-in build script and GitHub Actions workflow.
 
-Release binaries must be accompanied by a SHA-256 checksum.
+Release binaries are accompanied by SHA-256 checksums.
+
+Signing must only be requested for binaries produced from this repository and its public build configuration.
 
 ## Roles
 
 Current project roles are held by the repository owner:
 
-- Committer and reviewer: Christine Fritz (`@christine-fritz`)
-- Signing approver: Christine Fritz (`@christine-fritz`)
+- Committer and reviewer: [Christine Fritz (@christine-fritz)](https://github.com/christine-fritz)
+- Signing approver: [Christine Fritz (@christine-fritz)](https://github.com/christine-fritz)
 
 ## Privacy
 
 See [PRIVACY.md](PRIVACY.md).
 
-RM Dark Helper does not transfer information to other networked systems unless specifically requested by the user or the person installing or operating it.
+This program will not transfer any information to other networked systems unless specifically requested by the user or the person installing or operating it.
 
-## Signing provider
+## Release approval
 
-If the SignPath Foundation application is accepted, this page and the release documentation will be updated to include the required SignPath Foundation attribution and the signing workflow used for releases.
+Each release intended for signing must be manually approved by the signing approver after the corresponding public source revision and automated build have been reviewed.
